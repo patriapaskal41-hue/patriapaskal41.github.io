@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);
+}
+
+/* ================================
+   LOGIN BOX
+================================ */
+.login-box {
+    width: 380px;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+/* ================================
+   TITLE
+================================ */
+.login-box h1 {
+    color: #0d47a1;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* ================================
+   SUBTITLE
+================================ */
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   INPUT GROUP
+================================ */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #164a8a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ================================
+   INPUT
+================================ */
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 2px solid #d6e4f5;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+/* Saat input diklik */
+.input-group input:focus {
+    border-color: #1976d2;
+
+    box-shadow:
+        0 0 0 4px rgba(25, 118, 210, 0.12);
+}
+
+/* ================================
+   PASSWORD BOX
+================================ */
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 45px;
+}
+
+/* ================================
+   TOGGLE PASSWORD
+================================ */
+#togglePassword {
+    position: absolute;
+
+    right: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    user-select: none;
+}
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+#loginBtn {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover tombol */
+#loginBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(13, 71, 161, 0.35);
+}
+
+/* Saat tombol ditekan */
+#loginBtn:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   PESAN
+================================ */
+#pesan {
+    margin-top: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ================================
+   RESPONSIVE HP
+================================ */
+@media (max-width: 480px) {
+
+    .login-box {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+    .login-box h1 {
+        font-size: 26px;
+    }
+}

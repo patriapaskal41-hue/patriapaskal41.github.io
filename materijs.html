@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript untuk Pemula - PatriaTech</title>
+
+    <link rel="stylesheet" href="style_5.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>JavaScript dan Fungsi Dasarnya</h1>
+
+            <p>
+                Pelajari dasar-dasar JavaScript untuk membuat website
+                menjadi lebih interaktif dan dinamis.
+            </p>
+        </div>
+    </header>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="website.html">Beranda</a>
+            <a href="website.html#artikel">Artikel</a>
+            <a href="website.html#kategori">Kategori</a>
+        </div>
+    </nav>
+
+
+    <!-- ISI MATERI -->
+    <main class="container article">
+
+        <!-- 1 -->
+        <section>
+            <h2>1. Apa Itu JavaScript?</h2>
+
+            <p>
+                JavaScript adalah bahasa pemrograman yang digunakan untuk
+                membuat halaman website menjadi lebih interaktif.
+            </p>
+
+            <p>
+                Jika HTML digunakan untuk membuat struktur website dan CSS
+                digunakan untuk mengatur tampilannya, JavaScript digunakan
+                untuk memberikan perilaku atau aksi pada website.
+            </p>
+
+            <h3>Contoh:</h3>
+
+            <pre><code>console.log("Halo, Patria!");</code></pre>
+
+            <p>
+                Kode tersebut digunakan untuk menampilkan teks
+                <strong>"Halo, Patria!"</strong> pada console browser.
+            </p>
+        </section>
+
+
+        <!-- 2 -->
+        <section>
+            <h2>2. Fungsi JavaScript dalam Website</h2>
+
+            <p>
+                JavaScript dapat digunakan untuk melakukan berbagai hal
+                pada sebuah website.
+            </p>
+
+            <ul>
+                <li>Menampilkan pesan.</li>
+                <li>Mengubah teks pada halaman.</li>
+                <li>Mengubah tampilan elemen.</li>
+                <li>Membuat tombol menjadi interaktif.</li>
+                <li>Membuat validasi form.</li>
+                <li>Membuat animasi sederhana.</li>
+                <li>Mengolah data.</li>
+            </ul>
+        </section>
+
+
+        <!-- 3 -->
+        <section>
+            <h2>3. Cara Menambahkan JavaScript ke HTML</h2>
+
+            <p>
+                JavaScript dapat ditulis langsung di dalam file HTML
+                menggunakan tag <strong>&lt;script&gt;</strong>.
+            </p>
+
+            <h3>Contoh:</h3>
+
+            <pre><code>&lt;script&gt;
+    alert("Halo, Patria!");
+&lt;/script&gt;</code></pre>
+
+            <p>
+                Ketika halaman dibuka, JavaScript tersebut akan menjalankan
+                perintah <strong>alert()</strong>.
+            </p>
+        </section>
+
+
+        <!-- 4 -->
+        <section>
+            <h2>4. JavaScript Eksternal</h2>
+
+            <p>
+                Untuk project yang lebih rapi, JavaScript biasanya dipisahkan
+                ke file sendiri dengan ekstensi <strong>.js</strong>.
+            </p>
+
+            <p>
+                Misalnya kita memiliki file:
+            </p>
+
+            <pre><code>index.html
+style.css
+script.js</code></pre>
+
+            <p>
+                Kemudian file JavaScript dapat dihubungkan ke HTML menggunakan:
+            </p>
+
+            <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>
+                Cara ini membuat kode HTML, CSS, dan JavaScript lebih
+                terorganisir.
+            </p>
+        </section>
+
+
+        <!-- 5 -->
+        <section>
+            <h2>5. Variabel</h2>
+
+            <p>
+                Variabel digunakan untuk menyimpan data yang dapat digunakan
+                oleh program.
+            </p>
+
+            <p>
+                Dalam JavaScript kita dapat menggunakan
+                <strong>let</strong> dan <strong>const</strong>.
+            </p>
+
+            <h3>Contoh let:</h3>
+
+            <pre><code>let nama = "Patria";
+
+console.log(nama);</code></pre>
+
+            <p>
+                Variabel <strong>nama</strong> menyimpan data berupa teks
+                "Patria".
+            </p>
+
+            <h3>Contoh const:</h3>
+
+            <pre><code>const umur = 18;
+
+console.log(umur);</code></pre>
+
+            <p>
+                <strong>const</strong> digunakan untuk nilai yang tidak ingin
+                diubah setelah dibuat.
+            </p>
+        </section>
+
+
+        <!-- 6 -->
+        <section>
+            <h2>6. Tipe Data</h2>
+
+            <p>
+                Tipe data menunjukkan jenis data yang digunakan oleh program.
+            </p>
+
+            <h3>String</h3>
+
+            <pre><code>let nama = "Patria";</code></pre>
+
+            <p>
+                String digunakan untuk menyimpan teks.
+            </p>
+
+            <h3>Number</h3>
+
+            <pre><code>let umur = 18;</code></pre>
+
+            <p>
+                Number digunakan untuk menyimpan angka.
+            </p>
+
+            <h3>Boolean</h3>
+
+            <pre><code>let belajar = true;</code></pre>
+
+            <p>
+                Boolean memiliki dua nilai utama, yaitu
+                <strong>true</strong> dan <strong>false</strong>.
+            </p>
+        </section>
+
+
+        <!-- 7 -->
+        <section>
+            <h2>7. Operator</h2>
+
+            <p>
+                Operator digunakan untuk melakukan operasi pada data.
+            </p>
+
+            <h3>Contoh operasi matematika:</h3>
+
+            <pre><code>let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);</code></pre>
+
+            <p>
+                Operator tersebut digunakan untuk penjumlahan, pengurangan,
+                perkalian, dan pembagian.
+            </p>
+        </section>
+
+
+        <!-- 8 -->
+        <section>
+            <h2>8. Percabangan if</h2>
+
+            <p>
+                Percabangan digunakan ketika program perlu mengambil
+                keputusan berdasarkan suatu kondisi.
+            </p>
+
+            <h3>Contoh:</h3>
+
+            <pre><code>let umur = 18;
+
+if (umur >= 17) {
+    console.log("Sudah cukup umur");
+}</code></pre>
+
+            <p>
+                Program akan menjalankan kode di dalam <strong>if</strong>
+                jika kondisi tersebut bernilai benar.
+            </p>
+        </section>
+
+
+        <!-- 9 -->
+        <section>
+            <h2>9. Perulangan</h2>
+
+            <p>
+                Perulangan digunakan untuk menjalankan kode beberapa kali.
+            </p>
+
+            <h3>Contoh for:</h3>
+
+            <pre><code>for (let i = 1; i &lt;= 5; i++) {
+    console.log(i);
+}</code></pre>
+
+            <p>
+                Kode tersebut akan menampilkan angka dari 1 sampai 5
+                pada console.
+            </p>
+        </section>
+
+
+        <!-- 10 -->
+        <section>
+            <h2>10. Function</h2>
+
+            <p>
+                Function atau fungsi adalah kumpulan kode yang dapat
+                digunakan kembali untuk melakukan tugas tertentu.
+            </p>
+
+            <h3>Contoh:</h3>
+
+            <pre><code>function sapa() {
+    console.log("Halo, Patria!");
+}
+
+sapa();</code></pre>
+
+            <p>
+                Function <strong>sapa()</strong> dapat dipanggil ketika kita
+                ingin menjalankan kode yang ada di dalamnya.
+            </p>
+        </section>
+
+
+        <!-- 11 -->
+        <section>
+            <h2>11. JavaScript dan Tombol HTML</h2>
+
+            <p>
+                Salah satu penggunaan JavaScript yang sangat umum adalah
+                membuat tombol HTML menjadi interaktif.
+            </p>
+
+            <h3>HTML:</h3>
+
+            <pre><code>&lt;button onclick="sapa()"&gt;
+    Klik Saya
+&lt;/button&gt;</code></pre>
+
+            <h3>JavaScript:</h3>
+
+            <pre><code>function sapa() {
+    alert("Halo! Selamat belajar coding.");
+}</code></pre>
+
+            <p>
+                Ketika tombol diklik, JavaScript akan menjalankan function
+                <strong>sapa()</strong>.
+            </p>
+        </section>
+
+
+        <!-- 12 -->
+        <section>
+            <h2>12. Mengubah Isi HTML dengan JavaScript</h2>
+
+            <p>
+                JavaScript juga dapat digunakan untuk mengubah isi elemen
+                HTML.
+            </p>
+
+            <h3>HTML:</h3>
+
+            <pre><code>&lt;h2 id="judul"&gt;Teks Lama&lt;/h2&gt;</code></pre>
+
+            <h3>JavaScript:</h3>
+
+            <pre><code>document.getElementById("judul").textContent =
+    "Teks Baru";</code></pre>
+
+            <p>
+                JavaScript mencari elemen dengan id
+                <strong>judul</strong>, kemudian mengubah teksnya.
+            </p>
+        </section>
+
+
+        <!-- 13 -->
+        <section>
+            <h2>13. Contoh Project Sederhana</h2>
+
+            <p>
+                Setelah memahami dasar JavaScript, kamu bisa mencoba
+                membuat project sederhana.
+            </p>
+
+            <h3>HTML:</h3>
+
+            <pre><code>&lt;h2 id="angka"&gt;0&lt;/h2&gt;
+
+&lt;button onclick="tambah()"&gt;
+    Tambah
+&lt;/button&gt;</code></pre>
+
+            <h3>JavaScript:</h3>
+
+            <pre><code>let angka = 0;
+
+function tambah() {
+    angka++;
+
+    document.getElementById("angka").textContent = angka;
+}</code></pre>
+
+            <p>
+                Setiap tombol ditekan, nilai angka akan bertambah satu.
+            </p>
+        </section>
+
+
+        <!-- 14 -->
+        <section>
+            <h2>14. Kesalahan yang Sering Dilakukan Pemula</h2>
+
+            <p>
+                Saat belajar JavaScript, beberapa kesalahan berikut cukup
+                sering terjadi:
+            </p>
+
+            <ul>
+                <li>Terlalu banyak menghafal kode.</li>
+                <li>Hanya melakukan copy-paste.</li>
+                <li>Tidak membaca pesan error.</li>
+                <li>Belajar terlalu banyak materi sekaligus.</li>
+                <li>Tidak pernah membuat project sendiri.</li>
+            </ul>
+
+            <p>
+                Jangan takut melakukan kesalahan. Error merupakan bagian
+                dari proses belajar programming.
+            </p>
+        </section>
+
+
+        <!-- INFO -->
+        <section class="info">
+
+            <h2>Kesimpulan</h2>
+
+            <p>
+                JavaScript adalah bahasa pemrograman yang sangat penting
+                dalam pengembangan website modern. JavaScript memungkinkan
+                sebuah halaman website menjadi lebih interaktif dan dinamis.
+            </p>
+
+            <p>
+                Sebagai pemula, kamu tidak perlu langsung mempelajari
+                semuanya. Mulailah dari variabel, tipe data, operator,
+                percabangan, perulangan, function, dan manipulasi HTML.
+            </p>
+
+            <p>
+                Setelah memahami dasar tersebut, lanjutkan dengan membuat
+                project kecil agar kemampuanmu semakin berkembang.
+            </p>
+
+            <h3>Urutan belajar yang disarankan:</h3>
+
+            <pre><code>HTML
+ ↓
+CSS
+ ↓
+JavaScript Dasar
+ ↓
+DOM
+ ↓
+Event
+ ↓
+Project Sederhana
+ ↓
+JavaScript Lanjutan</code></pre>
+
+        </section>
+
+
+        <!-- KEMBALI -->
+        <div class="back">
+            <a href="website.html#artikel">
+                ← Kembali ke Artikel
+            </a>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © 2026 PatriaTech. Belajar coding dari nol.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

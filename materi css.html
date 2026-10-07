@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS untuk Pemula - PatriaTech</title>
+
+    <!-- CSS khusus materi CSS -->
+    <link rel="stylesheet" href="style_5.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <h1>CSS untuk Pemula</h1>
+
+            <p>
+                Belajar mempercantik website menggunakan CSS dari dasar.
+            </p>
+
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+
+        <div class="container">
+          <a href="website.html">Home</a>
+            <a href="website.html#artikel">Artikel</a>
+            <a href="website.html#kategori">Kategori</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         KONTEN
+    ========================== -->
+
+    <main class="container article">
+
+
+        <!-- =========================
+             1. PENGENALAN CSS
+        ========================== -->
+
+        <section id="pengenalan">
+
+            <h2>1. Apa Itu CSS?</h2>
+
+            <p>
+
+                CSS adalah singkatan dari
+                <strong>Cascading Style Sheets</strong>.
+
+                CSS digunakan untuk mengatur tampilan sebuah
+                halaman website.
+
+            </p>
+
+
+            <p>
+
+                Dengan CSS kita dapat mengatur warna,
+                ukuran tulisan, jarak, posisi, background,
+                tombol, layout, dan berbagai tampilan lainnya.
+
+            </p>
+
+
+            <h3>Contoh sederhana:</h3>
+
+
+            <pre><code>h1 {
+    color: blue;
+}</code></pre>
+
+
+            <p>
+
+                Kode tersebut membuat tulisan
+                <strong>h1</strong> menjadi berwarna biru.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             2. CARA MENGGUNAKAN CSS
+        ========================== -->
+
+        <section id="cara">
+
+            <h2>2. Cara Menggunakan CSS</h2>
+
+
+            <p>
+
+                Ada beberapa cara untuk menggunakan CSS
+                pada HTML.
+
+            </p>
+
+
+
+            <h3>Inline CSS</h3>
+
+            <p>
+                CSS ditulis langsung di dalam tag HTML.
+            </p>
+
+
+            <pre><code>&lt;h1 style="color: blue;"&gt;
+    Halo Dunia
+&lt;/h1&gt;</code></pre>
+
+
+
+            <h3>Internal CSS</h3>
+
+            <p>
+                CSS ditulis di dalam tag
+                <strong>&lt;style&gt;</strong>.
+            </p>
+
+
+            <pre><code>&lt;style&gt;
+
+h1 {
+    color: blue;
+}
+
+&lt;/style&gt;</code></pre>
+
+
+
+            <h3>External CSS</h3>
+
+            <p>
+
+                CSS ditulis di file terpisah,
+                kemudian dihubungkan dengan HTML.
+
+            </p>
+
+
+            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+
+            <p>
+
+                Cara external CSS biasanya paling rapi
+                untuk website yang memiliki banyak halaman.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             3. SELECTOR
+        ========================== -->
+
+        <section id="selector">
+
+            <h2>3. Mengenal CSS Selector</h2>
+
+
+            <p>
+
+                Selector digunakan untuk menentukan
+                elemen HTML mana yang ingin diberikan
+                style.
+
+            </p>
+
+
+
+            <h3>Selector Tag</h3>
+
+
+            <pre><code>p {
+    color: red;
+}</code></pre>
+
+
+            <p>
+
+                Semua elemen
+                <strong>&lt;p&gt;</strong>
+                akan memiliki warna merah.
+
+            </p>
+
+
+
+            <h3>Selector Class</h3>
+
+
+            <pre><code>.judul {
+    color: blue;
+}</code></pre>
+
+
+            <p>
+
+                Class digunakan dengan tanda titik
+                <strong>.</strong>.
+
+            </p>
+
+
+            <h3>Selector ID</h3>
+
+
+            <pre><code>#utama {
+    color: green;
+}</code></pre>
+
+
+            <p>
+
+                ID digunakan dengan tanda pagar
+                <strong>#</strong>.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             4. WARNA
+        ========================== -->
+
+        <section id="warna">
+
+            <h2>4. Mengatur Warna</h2>
+
+
+            <p>
+
+                CSS dapat digunakan untuk mengatur
+                warna tulisan dan background.
+
+            </p>
+
+
+            <h3>Warna tulisan</h3>
+
+
+            <pre><code>p {
+    color: blue;
+}</code></pre>
+
+
+            <h3>Warna background</h3>
+
+
+            <pre><code>body {
+    background-color: lightblue;
+}</code></pre>
+
+
+            <h3>Menggunakan kode warna</h3>
+
+
+            <pre><code>h1 {
+    color: #2563eb;
+}</code></pre>
+
+
+            <p>
+
+                Kode seperti
+                <strong>#2563eb</strong>
+                merupakan kode warna hexadecimal.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             5. FONT DAN TEKS
+        ========================== -->
+
+        <section id="font">
+
+            <h2>5. Mengatur Tulisan</h2>
+
+
+            <p>
+
+                CSS dapat digunakan untuk mengatur
+                jenis, ukuran, ketebalan, dan posisi
+                tulisan.
+
+            </p>
+
+
+            <h3>Jenis font</h3>
+
+
+            <pre><code>body {
+    font-family: Arial;
+}</code></pre>
+
+
+
+            <h3>Ukuran tulisan</h3>
+
+
+            <pre><code>h1 {
+    font-size: 40px;
+}</code></pre>
+
+
+
+            <h3>Ketebalan tulisan</h3>
+
+
+            <pre><code>h1 {
+    font-weight: bold;
+}</code></pre>
+
+
+
+            <h3>Posisi tulisan</h3>
+
+
+            <pre><code>h1 {
+    text-align: center;
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             6. BOX MODEL
+        ========================== -->
+
+        <section id="box">
+
+            <h2>6. Mengenal Box Model</h2>
+
+
+            <p>
+
+                Setiap elemen HTML dapat dianggap
+                seperti sebuah kotak.
+
+                CSS memiliki beberapa bagian penting
+                dalam box model.
+
+            </p>
+
+
+            <pre><code>.kotak {
+
+    width: 300px;
+
+    padding: 20px;
+
+    border: 2px solid black;
+
+    margin: 20px;
+
+}</code></pre>
+
+
+            <h3>Bagian Box Model</h3>
+
+
+            <ul>
+
+                <li>
+                    <strong>Width</strong> =
+                    menentukan lebar.
+                </li>
+
+                <li>
+                    <strong>Padding</strong> =
+                    jarak antara isi dan border.
+                </li>
+
+                <li>
+                    <strong>Border</strong> =
+                    garis pembatas.
+                </li>
+
+                <li>
+                    <strong>Margin</strong> =
+                    jarak dengan elemen lain.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             7. WIDTH DAN HEIGHT
+        ========================== -->
+
+        <section>
+
+            <h2>7. Width dan Height</h2>
+
+
+            <p>
+
+                Width digunakan untuk menentukan
+                lebar elemen.
+
+            </p>
+
+
+            <pre><code>.kotak {
+    width: 300px;
+}</code></pre>
+
+
+            <p>
+
+                Height digunakan untuk menentukan
+                tinggi elemen.
+
+            </p>
+
+
+            <pre><code>.kotak {
+    height: 200px;
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             8. BORDER DAN BORDER RADIUS
+        ========================== -->
+
+        <section>
+
+            <h2>8. Border dan Border Radius</h2>
+
+
+            <p>
+
+                Border digunakan untuk memberikan
+                garis pada sebuah elemen.
+
+            </p>
+
+
+            <pre><code>.kotak {
+    border: 2px solid blue;
+}</code></pre>
+
+
+            <p>
+
+                Border-radius digunakan untuk
+                membuat sudut menjadi melengkung.
+
+            </p>
+
+
+            <pre><code>.kotak {
+    border-radius: 10px;
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             9. BUTTON
+        ========================== -->
+
+        <section>
+
+            <h2>9. Membuat Tombol dengan CSS</h2>
+
+
+            <p>
+
+                CSS dapat digunakan untuk membuat
+                tombol terlihat lebih menarik.
+
+            </p>
+
+
+            <pre><code>button {
+
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}</code></pre>
+
+
+            <p>
+
+                Properti
+                <strong>cursor: pointer</strong>
+                membuat kursor berubah menjadi
+                bentuk tangan ketika diarahkan
+                ke tombol.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             10. HOVER
+        ========================== -->
+
+        <section>
+
+            <h2>10. Mengenal Hover</h2>
+
+
+            <p>
+
+                Pseudo-class
+                <strong>:hover</strong>
+                digunakan untuk memberikan perubahan
+                ketika mouse diarahkan ke sebuah elemen.
+
+            </p>
+
+
+            <pre><code>button:hover {
+
+    background-color: #1d4ed8;
+
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             11. FLEXBOX
+        ========================== -->
+
+        <section id="layout">
+
+            <h2>11. Mengenal Flexbox</h2>
+
+
+            <p>
+
+                Flexbox digunakan untuk mengatur
+                posisi beberapa elemen dengan lebih mudah.
+
+            </p>
+
+
+            <pre><code>.container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}</code></pre>
+
+
+            <h3>Beberapa properti penting:</h3>
+
+
+            <ul>
+
+                <li>
+                    <strong>display: flex</strong>
+                    mengaktifkan Flexbox.
+                </li>
+
+                <li>
+                    <strong>justify-content</strong>
+                    mengatur posisi secara horizontal.
+                </li>
+
+                <li>
+                    <strong>align-items</strong>
+                    mengatur posisi secara vertikal.
+                </li>
+
+                <li>
+                    <strong>gap</strong>
+                    mengatur jarak antar elemen.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             12. GRID
+        ========================== -->
+
+        <section>
+
+            <h2>12. Mengenal CSS Grid</h2>
+
+
+            <p>
+
+                CSS Grid digunakan untuk membuat
+                layout berbentuk baris dan kolom.
+
+            </p>
+
+
+            <pre><code>.container {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 20px;
+
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             13. RESPONSIVE
+        ========================== -->
+
+        <section id="responsive">
+
+            <h2>13. Membuat Website Responsive</h2>
+
+
+            <p>
+
+                Website responsive adalah website
+                yang dapat menyesuaikan tampilannya
+                dengan ukuran layar.
+
+            </p>
+
+
+            <p>
+
+                Contohnya adalah menggunakan
+                media query.
+
+            </p>
+
+
+            <pre><code>@media (max-width: 768px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+}</code></pre>
+
+
+            <p>
+
+                Kode tersebut akan mengubah ukuran
+                tulisan ketika lebar layar mencapai
+                768px atau lebih kecil.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             14. CONTOH WEBSITE
+        ========================== -->
+
+        <section>
+
+            <h2>14. Contoh Website Sederhana</h2>
+
+
+            <p>
+
+                Berikut contoh sederhana penggunaan
+                HTML dan CSS secara bersamaan.
+
+            </p>
+
+
+            <h3>HTML</h3>
+
+
+            <pre><code>&lt;div class="kartu"&gt;
+
+    &lt;h2&gt;PatriaTech&lt;/h2&gt;
+
+    &lt;p&gt;
+        Belajar coding dari dasar.
+    &lt;/p&gt;
+
+    &lt;button&gt;
+        Mulai Belajar
+    &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+
+
+            <h3>CSS</h3>
+
+
+            <pre><code>.kartu {
+
+    background: white;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.1);
+
+}
+
+.kartu button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+}</code></pre>
+
+        </section>
+
+
+
+        <!-- =========================
+             KESIMPULAN
+        ========================== -->
+
+        <section class="info">
+
+            <h2>Kesimpulan</h2>
+
+
+            <p>
+
+                HTML digunakan untuk membuat
+                struktur website, sedangkan CSS
+                digunakan untuk mengatur tampilannya.
+
+            </p>
+
+
+            <p>
+
+                Setelah memahami HTML dan CSS,
+                langkah berikutnya adalah belajar
+                <strong>JavaScript</strong> agar website
+                dapat menjadi lebih interaktif.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             KEMBALI
+        ========================== -->
+
+        <div class="back">
+
+            <a href="website(2).html#artikel">
+
+                ← Kembali ke Artikel
+
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 PatriaTech
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
